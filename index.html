@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/stylesheets/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Jost&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script src="https://kit.fontawesome.com/d25f0dcce7.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript/index.js"></script>
+  <title>Kara Liu</title>
+</head>
+
+<body>
+  <!-- <nav id="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav> -->
+
+  <div id="body-container">
+    <section id="about">
+      <div id="headshot">
+        <img src="assets/images/headshot.jpg">
+      </div>
+  
+      <div id="welcome-msg">
+        <h6>Hello! My name is</h6>
+        <h1>Kara Liu</h1>
+        <p>I am a full stack software engineer based in New York City. I have experience building apps in Ruby on Rails, JavaScript, and React.js.</p>
+        <a target="_blank" href="assets/images/resume.pdf"><button>view my résumé</button></a>
+      </div>
+    </section>
+  
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="all-skills">
+        <div class="skill">
+          <i class="devicon-react-original colored"></i>
+          <h6>React</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-ruby-plain colored"></i>
+          <h6>Ruby</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-rails-plain colored"></i>
+          <h6>Rails</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-javascript-plain colored"></i>
+          <h6>JavaScript</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-postgresql-plain colored"></i>
+          <h6>PostgreSQL</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-mongodb-plain colored"></i>
+          <h6>MongoDB</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-express-original colored"></i>
+          <h6>Express</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-nodejs-plain colored"></i>
+          <h6>node.js</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-jquery-plain colored"></i>
+          <h6>jQuery</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-git-plain colored"></i>
+          <h6>git</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-html5-plain colored"></i>
+          <h6>HTML5</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-css3-plain colored"></i>
+          <h6>CSS3</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-sass-original colored"></i>
+          <h6>SCSS</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-webpack-plain colored"></i>
+          <h6>Webpack</h6>
+        </div>
+        <div class="skill">
+          <i class="devicon-babel-plain colored"></i>
+          <h6>Babel</h6>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+
+        <div id="proj-links">
+          <div class="p-link active" id="pickle-link" onClick="pickle()">Pickle</div class="p-link">
+          <div class="p-link" id="wiggle-link" onClick="wiggleAnimals()">Wiggle Animals</div class="p-link">
+          <div class="p-link" id="bobudget-link" onClick="bobudget()">BoBudget</div class="p-link">
+        </div>
+
+        <div id="proj-desc">
+          <p><a target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/">Pickle</a>, a pixel-perfect clone of Rover, is an online marketplace that allows users to buy and sell guinea pig services.</p>
+          
+          <div class="tech-n-links">
+            <div class="i-links">
+              <a target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/"><i
+                  class="far fa-window-restore"></i></a>
+              <a target="_blank" href="https://github.com/karapliu/pickle-app"><i
+                  class="fab fa-github"></i></a>
+            </div>
+
+            <div class="technologies">
+              <h6>React/Redux</h6>
+              <h6>Ruby on Rails</h6>
+              <h6>JavaScript</h6>
+              <h6>PostgreSQL</h6>
+              <h6>Amazon AWS</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div id="macbook-container">
+          <img src="assets/images/macbook.png">
+          
+          <div id="macbook">
+            <a id="link" target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/">Visit the Site</a>
+            <img src="assets/images/projects/pickle.gif">
+          </div>
+        </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="connect">Let's Connect!</h1>
+
+      <form id="contact-form" action="https://formspree.io/meqrqvel" method="POST">
+        <label>
+          Email Address*
+          <input type="text" name="_replyto">
+        </label>
+        <label>
+          Subject*
+          <input type="text" name="subject">
+        </label>
+      
+        <label>
+          Message*
+          <textarea rows=10 name="message"></textarea>
+        </label>
+      
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
