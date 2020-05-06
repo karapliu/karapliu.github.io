@@ -12,24 +12,61 @@
 </head>
 
 <body>
-  <!-- <nav id="nav">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav> -->
+  <div id="nav-container">
+    <nav id="nav">
+      <button id="close-nav-btn" onclick="closeNav()"><i class="fas fa-times"></i></button>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Back to Top</a>
+  
+      <div class="other-links">
+        <a target="_blank" href="assets/images/resume.pdf">Résumé</a>
+        <a target="_blank" href="https://github.com/karapliu">Github</a>
+        <a target="_blank" href="https://www.linkedin.com/in/karaliu/">LinkedIn</a>
+      </div>
+    </nav>
+  </div>
 
   <div id="body-container">
-    <section id="about">
+    <button id="nav-btn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+
+    <div id="side-links">
+      <a target="_blank" href="https://github.com/karapliu/"><i class="fab fa-github"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/karaliu/"><i class="fab fa-linkedin"></i></a>
+      <a target="_blank" href="https://www.instagram.com/karastrophic25"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <section id="welcome">
       <div id="headshot">
-        <img src="assets/images/headshot.jpg">
+        <img src="assets/images/photo.png">
       </div>
   
       <div id="welcome-msg">
         <h6>Hello! My name is</h6>
         <h1>Kara Liu</h1>
-        <p>I am a full stack software engineer based in New York City. I have experience building apps in Ruby on Rails, JavaScript, and React.js.</p>
-        <a target="_blank" href="assets/images/resume.pdf"><button>view my résumé</button></a>
+        <p>I am a full stack <span class="bold">software engineer</span> based in New York City. I have experience building apps in Ruby on Rails, JavaScript, and React.js.</p>
+
+        <div id="welcome-buttons">
+          <a target="_blank" href="assets/images/resume.pdf"><button>résumé</button></a>
+          <a href="#contact"><button>contact</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+
+      <div class="about-container">
+        <div class="about-me">
+          <p>Hi! My name is Kara, and I'm a <span class="bold">software engineer</span> based in New York City. I was born in California, and raised in Taipei, Taiwan.<br><br><br>I love to create, whether that be web applications, elaborate meals in the kitchen, or art through different mediums (film photography is one of my favorites). What I admire about almost any form of creation is the path of development and growth one must go through, whether it be small or huge, in order to get a finished product. <span class="bold">Coding</span> is a new avenue of creation for me, but one of the most exciting ones nonetheless. The evergrowing nature of new technologies in programming excites me, because I am always hungry for more knowledge and ways to improve :)<br><br><span class="lets-create bold">Let's create!</span><span class="small-links">&nbsp;&nbsp;&nbsp;— <a href="#contact">contact</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="assets/images/resume.pdf">résumé</a></span></p>
+          <div class="other-interests"><span class="bold">Other interests include:</span> film photography (checkout my <a target="_blank" href="https://www.instagram.com/karastrophic27">instagram</a>), sustainability, cooking/baking, collecting vinyls, hiking, and seeing all of my favorite artists live</div>
+        </div>
+
+        <div class="about-photo">
+          <img src="assets/images/photo.png">
+        </div>
       </div>
     </section>
   
@@ -141,6 +178,10 @@
 
     <section id="contact">
       <h1 class="connect">Let's Connect!</h1>
+
+      <a target="_blank" href="https://github.com/karapliu/"><i class="fab fa-github"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/karaliu/"><i class="fab fa-linkedin"></i></a>
+      <a target="_blank" href="https://www.instagram.com/karastrophic25"><i class="fab fa-instagram"></i></a>
 
       <form id="contact-form" action="https://formspree.io/meqrqvel" method="POST">
         <label>

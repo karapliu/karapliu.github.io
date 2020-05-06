@@ -55,3 +55,28 @@ const bobudget = () => {
   desc.innerHTML = "<p><a target='_blank' href='http://bobudget.herokuapp.com/#/'>BoBudget</a> is a creative app where users can track their boba spendings. Other functionalities include a boba-themed dashboard, and a search for nearby stores.</p><div class='tech-n-links'><div class='i-links'><a target='_blank' href='http://bobudget.herokuapp.com/#/'><i class='far fa-window-restore'></i></a><a target='_blank' href='https://github.com/karapliu/bobudget-app'><i class='fab fa-github'></i></a></div><div class='technologies'><h6>MongoDB</h6><h6>Express</h6><h6>React</h6><h6>node.js</h6><h6>Amazon AWS</h6></div></div>";
   bobudget.classList.add("active");
 }
+
+const openNav = () => {
+  let nav = document.getElementById("nav");
+  let body = document.getElementById("body-container");
+  let btn = document.getElementById("nav-btn");
+  let sideLinks = document.getElementById("side-links");
+
+  btn.style.opacity = "0.0";
+  
+  nav.style.width = "inherit";
+  body.style.marginLeft = "300px";
+  sideLinks.style.opacity = "0.0";
+}
+
+const closeNav = () => {
+  let nav = document.getElementById("nav");
+  let body = document.getElementById("body-container");
+  let btn = document.getElementById("nav-btn");
+  let sideLinks = document.getElementById("side-links");
+
+  btn.style.opacity = "1.0";
+  nav.style.width = "0px";
+  body.style.marginLeft = "auto";
+  sideLinks.style.opacity = "1.0";
+}
