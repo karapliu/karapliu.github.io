@@ -96,7 +96,7 @@ input:focus, textarea:focus, button:focus {
     -webkit-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    width: 100%;
+    width: inherit;
     height: 80px;
     overflow-y: hidden;
   }
@@ -127,7 +127,7 @@ input:focus, textarea:focus, button:focus {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 250px;
+    width: 0;
     height: 100%;
     overflow-x: hidden;
   }
@@ -142,7 +142,7 @@ input:focus, textarea:focus, button:focus {
 
   #body-container {
     margin-right: auto;
-    margin-left: 300px;
+    margin-left: auto;
   }
 }
 
@@ -244,7 +244,7 @@ a:hover {
 }
 
 #side-links {
-  opacity: 0.0;
+  opacity: 1.0;
   -moz-transition: opacity 0.4s ease-in-out;
   -webkit-transition: opacity 0.4s ease-in-out;
   -ms-transition: opacity 0.4s ease-in-out;
@@ -279,7 +279,7 @@ a:hover {
   -webkit-transition: opacity 1.5s ease-in-out;
   -ms-transition: opacity 1.5s ease-in-out;
   transition: opacity 1.5s ease-in-out;
-  opacity: 0.0;
+  opacity: 1.0;
   transition: 0.5s;
   font-size: 25px;
   position: fixed;
