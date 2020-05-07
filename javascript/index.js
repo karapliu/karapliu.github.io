@@ -58,25 +58,24 @@ const bobudget = () => {
 
 const openNav = () => {
   let nav = document.getElementById("nav");
-  let body = document.getElementById("body-container");
+  let closeBtn = document.getElementById("close-nav-btn");
   let btn = document.getElementById("nav-btn");
   let sideLinks = document.getElementById("side-links");
 
+  closeBtn.style.display = "block";
   btn.style.opacity = "0.0";
-  
-  nav.style.width = "inherit";
-  body.style.marginLeft = "300px";
+  nav.style.height = "80px";
   sideLinks.style.opacity = "0.0";
 }
 
 const closeNav = () => {
   let nav = document.getElementById("nav");
-  let body = document.getElementById("body-container");
   let btn = document.getElementById("nav-btn");
+  let closeBtn = document.getElementById("close-nav-btn");
   let sideLinks = document.getElementById("side-links");
 
+  closeBtn.style.display = "none";
   btn.style.opacity = "1.0";
-  nav.style.width = "0px";
-  body.style.marginLeft = "auto";
+  nav.style.height = "0px";
   sideLinks.style.opacity = "1.0";
 }
