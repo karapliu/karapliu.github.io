@@ -224,15 +224,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const sharkCtx = sharkCanvas.getContext('2d');
   const shark = new Shark(sharkCanvas, sharkCtx);
   shark.animate();
-
-  sharkCanvas.addEventListener("mouseover", () => {
-    shark.pause = true;
-  });
-
-  sharkCanvas.addEventListener("mouseout", () => {
-    shark.pause = false;
-    shark.animate();
-  });
 });
 
 const pageLoad = () => {
@@ -305,24 +296,20 @@ const openNav = () => {
   let nav = document.getElementById("nav");
   let closeBtn = document.getElementById("close-nav-btn");
   let btn = document.getElementById("nav-btn");
-  let sideLinks = document.getElementById("side-links");
 
   closeBtn.style.display = "block";
   btn.style.opacity = "0.0";
   nav.style.height = "80px";
-  sideLinks.style.opacity = "0.0";
 }
 
 const closeNav = () => {
   let nav = document.getElementById("nav");
   let btn = document.getElementById("nav-btn");
   let closeBtn = document.getElementById("close-nav-btn");
-  let sideLinks = document.getElementById("side-links");
 
   closeBtn.style.display = "none";
   btn.style.opacity = "1.0";
   nav.style.height = "0px";
-  sideLinks.style.opacity = "1.0";
 }
 
 
