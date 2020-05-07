@@ -806,11 +806,11 @@ text-align: center;
 }
 
 #all {
-  -moz-transition: visibility 0.3s ease-in-out;
-  -webkit-transition: visibility 0.3s ease-in-out;
-  -ms-transition: visibility 0.3s ease-in-out;
-  transition: visibility 0.3s ease-in-out;
-  visibility: none;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.0;
 }
 
 

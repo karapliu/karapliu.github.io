@@ -239,7 +239,7 @@ const pageLoad = () => {
   let shark = document.getElementById('shark');
   let content = document.getElementById('all');
 
-  content.style.visibility = "visible";
+  content.style.opacity = "1.0";
   shark.style.display = "none";
 }
 
