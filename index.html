@@ -11,188 +11,192 @@
   <title>Kara Liu</title>
 </head>
 
-<body>
-  <nav id="nav">
-    <button id="close-nav-btn" onclick="closeNav()"><div></div></button>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="#">Back to Top</a>
-  </nav>
+<body onload="pageLoad()">
+  <canvas id="shark" width="1000" height="310" id="shark"></canvas>
 
-  <div id="body-container">
-    <button id="nav-btn" onclick="openNav()"><div></div></button>
+  <div id="all">
+    <nav id="nav">
+      <button id="close-nav-btn" onclick="closeNav()"><div></div></button>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Back to Top</a>
+    </nav>
 
-    <div id="side-links">
-      <a target="_blank" href="https://github.com/karapliu/"><i class="fab fa-github"></i></a>
-      <a target="_blank" href="https://www.linkedin.com/in/karaliu/"><i class="fab fa-linkedin"></i></a>
-      <a target="_blank" href="https://www.instagram.com/karastrophic25"><i class="fab fa-instagram"></i></a>
-    </div>
+    <div id="body-container">
+      <button id="nav-btn" onclick="openNav()"><div></div></button>
 
-    <section id="welcome">
-      <div id="headshot">
-        <img src="assets/images/photo.png">
+      <div id="side-links">
+        <a target="_blank" href="https://github.com/karapliu/"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/karaliu/"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://www.instagram.com/karastrophic25"><i class="fab fa-instagram"></i></a>
       </div>
-  
-      <div id="welcome-msg">
-        <h6>Hello! My name is</h6>
-        <h1>Kara Liu</h1>
-        <p>I am a full stack <span class="bold">software engineer</span> based in New York City. I have experience building apps in Ruby on Rails, JavaScript, and React.js.</p>
 
-        <div id="welcome-buttons">
-          <a target="_blank" href="assets/images/resume.pdf"><button>résumé</button></a>
-          <a href="#contact"><button>contact</button></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <h1 class="title">About Me</h1>
-
-      <div class="about-container">
-        <div class="about-me">
-          <p>Hi! My name is Kara, and I'm a <span class="bold">software engineer</span> based in New York City. I was born in California, and raised in Taipei, Taiwan.<br><br><br>I love to create, whether that be web applications, elaborate meals in the kitchen, or art through different mediums (film photography is one of my favorites). What I admire about almost any form of creation is the path of development and growth one must go through, whether it be small or huge, in order to get a finished product. <span class="bold">Coding</span> is a new avenue of creation for me, but one of the most exciting ones nonetheless. The evergrowing nature of new technologies in programming excites me, because I am always hungry for more knowledge and ways to improve :)<br><br><span class="lets-create bold">Let's create!</span><span class="small-links">&nbsp;&nbsp;&nbsp;— <a href="#contact">contact</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="assets/images/resume.pdf">résumé</a></span></p>
-          <div class="other-interests"><span class="bold">Other interests include:</span> film photography (checkout my <a target="_blank" href="https://www.instagram.com/karastrophic27">instagram</a>), sustainability, cooking/baking, collecting vinyls, hiking, and seeing all of my favorite artists live</div>
-        </div>
-
-        <div class="about-photo">
+      <section id="welcome">
+        <div id="headshot">
           <img src="assets/images/photo.png">
         </div>
-      </div>
-    </section>
-  
-    <section id="skills">
-      <h1 class="title">Skills</h1>
-      <div class="all-skills">
-        <div class="skill">
-          <i class="devicon-react-original colored"></i>
-          <h6>React</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-ruby-plain colored"></i>
-          <h6>Ruby</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-rails-plain colored"></i>
-          <h6>Rails</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-javascript-plain colored"></i>
-          <h6>JavaScript</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-postgresql-plain colored"></i>
-          <h6>PostgreSQL</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-mongodb-plain colored"></i>
-          <h6>MongoDB</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-express-original colored"></i>
-          <h6>Express</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-nodejs-plain colored"></i>
-          <h6>node.js</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-jquery-plain colored"></i>
-          <h6>jQuery</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-git-plain colored"></i>
-          <h6>git</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-html5-plain colored"></i>
-          <h6>HTML5</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-css3-plain colored"></i>
-          <h6>CSS3</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-sass-original colored"></i>
-          <h6>SCSS</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-webpack-plain colored"></i>
-          <h6>Webpack</h6>
-        </div>
-        <div class="skill">
-          <i class="devicon-babel-plain colored"></i>
-          <h6>Babel</h6>
-        </div>
-      </div>
-    </section>
+    
+        <div id="welcome-msg">
+          <h6>Hello! My name is</h6>
+          <h1>Kara Liu</h1>
+          <p>I am a full stack <span class="bold">software engineer</span> based in New York City. I have experience building apps in Ruby on Rails, JavaScript, and React.js.</p>
 
-    <section id="projects">
-      <h1 class="title">Projects</h1>
-
-        <div id="proj-links">
-          <div class="p-link active" id="pickle-link" onClick="pickle()">Pickle</div class="p-link">
-          <div class="p-link" id="wiggle-link" onClick="wiggleAnimals()">Wiggle Animals</div class="p-link">
-          <div class="p-link" id="bobudget-link" onClick="bobudget()">BoBudget</div class="p-link">
-        </div>
-
-        <div id="proj-desc">
-          <p><a target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/">Pickle</a>, a pixel-perfect clone of Rover, is an online marketplace that allows users to buy and sell guinea pig services.</p>
-          
-          <div class="tech-n-links">
-            <div class="i-links">
-              <a target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/"><i
-                  class="far fa-window-restore"></i></a>
-              <a target="_blank" href="https://github.com/karapliu/pickle-app"><i
-                  class="fab fa-github"></i></a>
-            </div>
-
-            <div class="technologies">
-              <h6>React/Redux</h6>
-              <h6>Ruby on Rails</h6>
-              <h6>JavaScript</h6>
-              <h6>PostgreSQL</h6>
-              <h6>Amazon AWS</h6>
-            </div>
+          <div id="welcome-buttons">
+            <a target="_blank" href="assets/images/resume.pdf"><button>résumé</button></a>
+            <a href="#contact"><button>contact</button></a>
           </div>
         </div>
-  
-        <div id="macbook-container">
-          <img src="assets/images/macbook.png">
-          
-          <div id="macbook">
-            <a id="link" target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/">Visit the Site</a>
-            <img src="assets/images/projects/pickle.gif">
+      </section>
+
+      <section id="about">
+        <h1 class="title">About Me</h1>
+
+        <div class="about-container">
+          <div class="about-me">
+            <p>Hi! My name is Kara, and I'm a <span class="bold">software engineer</span> based in New York City. I was born in California, and raised in Taipei, Taiwan.<br><br><br>I love to create, whether that be web applications, elaborate meals in the kitchen, or art through different mediums (film photography is one of my favorites). What I admire about almost any form of creation is the path of development and growth one must go through, whether it be small or huge, in order to get a finished product. <span class="bold">Coding</span> is a new avenue of creation for me, but one of the most exciting ones nonetheless. The evergrowing nature of new technologies in programming excites me, because I am always hungry for more knowledge and ways to improve :)<br><br><span class="lets-create bold">Let's create!</span><span class="small-links">&nbsp;&nbsp;&nbsp;— <a href="#contact">contact</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="assets/images/resume.pdf">résumé</a></span></p>
+            <div class="other-interests"><span class="bold">Other interests include:</span> film photography (checkout my <a target="_blank" href="https://www.instagram.com/karastrophic27">instagram</a>), sustainability, cooking/baking, collecting vinyls, hiking, and seeing all of my favorite artists live</div>
+          </div>
+
+          <div class="about-photo">
+            <img src="assets/images/photo.png">
           </div>
         </div>
-    </section>
+      </section>
+    
+      <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="all-skills">
+          <div class="skill">
+            <i class="devicon-react-original colored"></i>
+            <h6>React</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-ruby-plain colored"></i>
+            <h6>Ruby</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-rails-plain colored"></i>
+            <h6>Rails</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-javascript-plain colored"></i>
+            <h6>JavaScript</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-postgresql-plain colored"></i>
+            <h6>PostgreSQL</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-mongodb-plain colored"></i>
+            <h6>MongoDB</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-express-original colored"></i>
+            <h6>Express</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-nodejs-plain colored"></i>
+            <h6>node.js</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-jquery-plain colored"></i>
+            <h6>jQuery</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-git-plain colored"></i>
+            <h6>git</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-html5-plain colored"></i>
+            <h6>HTML5</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-css3-plain colored"></i>
+            <h6>CSS3</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-sass-original colored"></i>
+            <h6>SCSS</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-webpack-plain colored"></i>
+            <h6>Webpack</h6>
+          </div>
+          <div class="skill">
+            <i class="devicon-babel-plain colored"></i>
+            <h6>Babel</h6>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact">
-      <h1 class="connect">Let's Connect!</h1>
+      <section id="projects">
+        <h1 class="title">Projects</h1>
 
-      <a target="_blank" href="https://github.com/karapliu/"><i class="fab fa-github"></i></a>
-      <a target="_blank" href="https://www.linkedin.com/in/karaliu/"><i class="fab fa-linkedin"></i></a>
-      <a target="_blank" href="https://www.instagram.com/karastrophic25"><i class="fab fa-instagram"></i></a>
+          <div id="proj-links">
+            <div class="p-link active" id="pickle-link" onClick="pickle()">Pickle</div class="p-link">
+            <div class="p-link" id="wiggle-link" onClick="wiggleAnimals()">Wiggle Animals</div class="p-link">
+            <div class="p-link" id="bobudget-link" onClick="bobudget()">BoBudget</div class="p-link">
+          </div>
 
-      <form id="contact-form" action="https://formspree.io/meqrqvel" method="POST">
-        <label>
-          Email Address*
-          <input type="text" name="_replyto">
-        </label>
-        <label>
-          Subject*
-          <input type="text" name="subject">
-        </label>
-      
-        <label>
-          Message*
-          <textarea rows=10 name="message"></textarea>
-        </label>
-      
-        <button type="submit">Send</button>
-      </form>
-    </section>
+          <div id="proj-desc">
+            <p><a target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/">Pickle</a>, a pixel-perfect clone of Rover, is an online marketplace that allows users to buy and sell guinea pig services.</p>
+            
+            <div class="tech-n-links">
+              <div class="i-links">
+                <a target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/"><i
+                    class="far fa-window-restore"></i></a>
+                <a target="_blank" href="https://github.com/karapliu/pickle-app"><i
+                    class="fab fa-github"></i></a>
+              </div>
+
+              <div class="technologies">
+                <h6>React/Redux</h6>
+                <h6>Ruby on Rails</h6>
+                <h6>JavaScript</h6>
+                <h6>PostgreSQL</h6>
+                <h6>Amazon AWS</h6>
+              </div>
+            </div>
+          </div>
+    
+          <div id="macbook-container">
+            <img src="assets/images/macbook.png">
+            
+            <div id="macbook">
+              <a id="link" target="_blank" href="https://pickle-gpig-app.herokuapp.com/#/">Visit the Site</a>
+              <img src="assets/images/projects/pickle.gif">
+            </div>
+          </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="connect">Let's Connect!</h1>
+
+        <a target="_blank" href="https://github.com/karapliu/"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/karaliu/"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://www.instagram.com/karastrophic25"><i class="fab fa-instagram"></i></a>
+
+        <form id="contact-form" action="https://formspree.io/meqrqvel" method="POST">
+          <label>
+            Email Address*
+            <input type="text" name="_replyto">
+          </label>
+          <label>
+            Subject*
+            <input type="text" name="subject">
+          </label>
+        
+          <label>
+            Message*
+            <textarea rows=10 name="message"></textarea>
+          </label>
+        
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 </html>

@@ -800,5 +800,18 @@ text-align: center;
   }
 }
 
+#shark {
+  position: absolute;
+  bottom: 0;
+}
+
+#all {
+  -moz-transition: visibility 0.3s ease-in-out;
+  -webkit-transition: visibility 0.3s ease-in-out;
+  -ms-transition: visibility 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out;
+  visibility: none;
+}
+
 
 
